@@ -61,7 +61,7 @@ onMounted(() => {
       dot(actualData, {
         x: "Magnitude",
         y: "Redshift",
-        stroke: "MagnitudeLetter",
+        fill: "MagnitudeLetter",
       }),
     ],
   });
