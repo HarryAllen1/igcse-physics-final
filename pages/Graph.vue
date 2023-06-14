@@ -62,6 +62,7 @@ onMounted(() => {
         x: "Magnitude",
         y: "Redshift",
         fill: "MagnitudeLetter",
+        tip: true,
       }),
     ],
   });
