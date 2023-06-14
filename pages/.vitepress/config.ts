@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   lang: 'en-GB',
   title: 'IGCSE Physics Final',
+  head: [['script', {}, 'document.documentElement.classList.add("dark")']],
   themeConfig: {
     socialLinks: [
       {
@@ -11,4 +12,5 @@ export default defineConfig({
       },
     ],
   },
+  appearance: false,
 });

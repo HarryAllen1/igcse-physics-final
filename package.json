@@ -1,7 +1,7 @@
 {
   "name": "igcse-physics-final",
   "version": "1.0.0",
-  "description": "",
+  "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev pages",
     "docs:build": "vitepress build pages",
