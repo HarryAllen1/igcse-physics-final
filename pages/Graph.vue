@@ -1,10 +1,54 @@
 <script setup lang="ts">
-import { dot, frame, plot } from '@observablehq/plot';
-import data from './data.json';
-import { ref, onMounted } from 'vue';
+import { lineY, plot, ruleY } from "@observablehq/plot";
+import { onMounted, ref } from "vue";
+import data from "./data.json";
 
 const graph = ref<HTMLDivElement | null>(null);
 
+type MagnitudeLetter = "u" | "g" | "r" | "i" | "z";
+
+const actualData: {
+  Magnitude: number;
+  Redshift: number;
+  MagnitudeLetter: MagnitudeLetter;
+}[] = [];
+for (const { psfMag_u, psfMag_g, psfMag_i, psfMag_r, psfMag_z, z } of data[0]
+  .Rows as {
+  psfMag_u: number;
+  psfMag_g: number;
+  psfMag_r: number;
+  psfMag_i: number;
+  psfMag_z: number;
+  z: number;
+}[]) {
+  actualData.push(
+    {
+      Magnitude: psfMag_u,
+      Redshift: z,
+      MagnitudeLetter: "u",
+    },
+    {
+      Magnitude: psfMag_g,
+      Redshift: z,
+      MagnitudeLetter: "g",
+    },
+    {
+      Magnitude: psfMag_r,
+      Redshift: z,
+      MagnitudeLetter: "r",
+    },
+    {
+      Magnitude: psfMag_i,
+      Redshift: z,
+      MagnitudeLetter: "i",
+    },
+    {
+      Magnitude: psfMag_z,
+      Redshift: z,
+      MagnitudeLetter: "z",
+    }
+  );
+}
 onMounted(() => {
   const actualPlot = plot({
     grid: true,
@@ -12,7 +56,14 @@ onMounted(() => {
     color: {
       legend: true,
     },
-    marks: [frame(), dot(data[0].Rows, { x: 'x', y: 'Redshift', stroke: 'type' })],
+    marks: [
+      ruleY([0]),
+      lineY(actualData, {
+        x: "Magnitude",
+        y: "Redshift",
+        stroke: "MagnitudeLetter",
+      }),
+    ],
   });
   graph.value?.append(actualPlot);
 });
