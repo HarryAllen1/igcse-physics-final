@@ -12,7 +12,7 @@ onMounted(() => {
     color: {
       legend: true,
     },
-    marks: [frame(), dot(data, { x: 'x', y: 'Redshift', stroke: 'type' })],
+    marks: [frame(), dot(data[0].Rows, { x: 'x', y: 'Redshift', stroke: 'type' })],
   });
   graph.value?.append(actualPlot);
 });
