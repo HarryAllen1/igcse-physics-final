@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { dot, plot, ruleY } from "@observablehq/plot";
-import { onMounted, ref } from "vue";
-import data from "./data.json";
+import { dot, plot, ruleY } from '@observablehq/plot';
+import { onMounted, ref } from 'vue';
+import data from './data.json';
 
 const graph = ref<HTMLDivElement | null>(null);
 
-type MagnitudeLetter = "u" | "g" | "r" | "i" | "z";
+type MagnitudeLetter = 'u' | 'g' | 'r' | 'i' | 'z';
 
 const actualData: {
   Magnitude: number;
@@ -25,27 +25,27 @@ for (const { psfMag_u, psfMag_g, psfMag_i, psfMag_r, psfMag_z, z } of data[0]
     {
       Magnitude: psfMag_u,
       Redshift: z,
-      MagnitudeLetter: "u",
+      MagnitudeLetter: 'u',
     },
     {
       Magnitude: psfMag_g,
       Redshift: z,
-      MagnitudeLetter: "g",
+      MagnitudeLetter: 'g',
     },
     {
       Magnitude: psfMag_r,
       Redshift: z,
-      MagnitudeLetter: "r",
+      MagnitudeLetter: 'r',
     },
     {
       Magnitude: psfMag_i,
       Redshift: z,
-      MagnitudeLetter: "i",
+      MagnitudeLetter: 'i',
     },
     {
       Magnitude: psfMag_z,
       Redshift: z,
-      MagnitudeLetter: "z",
+      MagnitudeLetter: 'z',
     }
   );
 }
@@ -59,9 +59,9 @@ onMounted(() => {
     marks: [
       ruleY([0]),
       dot(actualData, {
-        x: "Magnitude",
-        y: "Redshift",
-        fill: "MagnitudeLetter",
+        x: 'Magnitude',
+        y: 'Redshift',
+        fill: 'MagnitudeLetter',
         tip: true,
       }),
     ],
@@ -77,5 +77,9 @@ onMounted(() => {
 <style>
 svg {
   background: none !important;
+}
+:root [aria-label='tip'][fill='white'],
+:root [aria-label='tip'] [fill='white'] {
+  fill: var(--vp-c-bg-alt);
 }
 </style>
