@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { lineY, plot, ruleY } from "@observablehq/plot";
+import { dot, plot, ruleY } from "@observablehq/plot";
 import { onMounted, ref } from "vue";
 import data from "./data.json";
 
@@ -58,7 +58,7 @@ onMounted(() => {
     },
     marks: [
       ruleY([0]),
-      lineY(actualData, {
+      dot(actualData, {
         x: "Magnitude",
         y: "Redshift",
         stroke: "MagnitudeLetter",
