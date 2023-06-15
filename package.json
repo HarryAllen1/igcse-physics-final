@@ -1,24 +1,24 @@
 {
-  "name": "igcse-physics-final",
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vitepress dev pages",
-    "build": "vitepress build pages",
-    "serve": "vitepress serve pages",
-    "format": "prettier --write ."
-  },
-  "author": "Harry Allen",
-  "license": "MIT",
-  "devDependencies": {
-    "prettier": "^2.8.8",
-    "typescript": "^5.1.3",
-    "vite": "^4.3.9",
-    "vitepress": "1.0.0-beta.2",
-    "vue": "^3.3.4"
-  },
-  "dependencies": {
-    "@observablehq/plot": "^0.6.8",
-    "@vercel/analytics": "^1.0.1"
-  }
+	"name": "igcse-physics-final",
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vitepress dev pages",
+		"build": "vitepress build pages",
+		"serve": "vitepress serve pages",
+		"format": "prettier --write ."
+	},
+	"author": "Harry Allen",
+	"license": "MIT",
+	"devDependencies": {
+		"prettier": "^2.8.8",
+		"typescript": "^5.1.3",
+		"vite": "^4.3.9",
+		"vitepress": "1.0.0-beta.2",
+		"vue": "^3.3.4"
+	},
+	"dependencies": {
+		"@observablehq/plot": "^0.6.8",
+		"@vercel/analytics": "^1.0.1"
+	}
 }
