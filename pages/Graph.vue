@@ -51,7 +51,7 @@ for (const { psfMag_u, psfMag_g, psfMag_i, psfMag_r, psfMag_z, z } of data[0]
 }
 onMounted(() => {
   const actualPlot = plot({
-    grid: true,
+    // grid: true,
     inset: 10,
     color: {
       legend: true,
