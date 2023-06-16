@@ -8,3 +8,7 @@
 	--vp-c-brand-dark: #8a4cd8;
 	--vp-c-brand-darker: #7135be;
 }
+
+:root {
+	scroll-behavior: smooth;
+}
