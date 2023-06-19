@@ -20,7 +20,7 @@ onMounted(async () => {
 				x: 'Magnitude',
 				y: 'Redshift',
 				fill: mapMagToColour,
-				sort: (a, b) => {
+				sort: (a: (typeof actualData)[0], b: (typeof actualData)[0]) => {
 					const preferredOrder = ['u', 'g', 'r', 'i', 'z'];
 					return (
 						preferredOrder.indexOf(a.MagnitudeLetter) -

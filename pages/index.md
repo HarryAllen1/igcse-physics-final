@@ -8,13 +8,15 @@ import Graph from './Graph.vue'
 
 ## Background Research
 
-<Graph />
+## Procedure
+
+I got the data from SDSS' data release 18. To get their data, I had to use their [SQL search tool](https://skyserver.sdss.org/dr18/SearchTools/sql)
 
 <<< ../query.sql
 
-## Procedure
-
 ## Data
+
+<Graph />
 
 ## Analysis
 

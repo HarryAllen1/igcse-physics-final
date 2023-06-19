@@ -58,6 +58,6 @@ export const mapMagToColour = (i: { MagnitudeLetter: string }) => {
 			return '#820f07';
 
 		default:
-			break;
+			return '#000000';
 	}
 };
