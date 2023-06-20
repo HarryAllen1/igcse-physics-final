@@ -4,22 +4,22 @@
 
 # Separate Graphs
 
-Ultraviolet
+## Ultraviolet
 
 <Graph magnitudeWavelength="u" />
 
-Green
+## Green
 
 <Graph magnitudeWavelength="g" />
 
-Red
+## Red
 
 <Graph magnitudeWavelength="r" />
 
-Near-infrared
+## Near-infrared
 
 <Graph magnitudeWavelength="i" />
 
-Infrared
+## Infrared
 
 <Graph magnitudeWavelength="z" />
