@@ -26,4 +26,7 @@ You can see the individual, unlayered graphs on [this page](./graphs.md).
 
 ## Analysis
 
+The graph shows that as magnitude increases (or as the galaxy gets darker), the greater the redshift becomes (meaning that the galaxy is moving away from Earth, faster).
+This graph shows that as the wavelength increases, the more linear the relationship gets, as shown by the points in deep red (representing the infrared magnitudes). It also shows that, as the magnitude increases, the less linear the magnitude-redshift relationship gets. Furthermore, since the other wavelengths still show some form of trend, as
+
 ## Conclusion
