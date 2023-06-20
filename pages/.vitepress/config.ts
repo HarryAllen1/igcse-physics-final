@@ -137,6 +137,10 @@ export default defineConfig({
 				text: 'Individual Graphs',
 				link: '/graphs',
 			},
+			{
+				text: '50k Graph',
+				link: '/graph-50k',
+			},
 		],
 		logo: '/logo.png',
 		search: {
