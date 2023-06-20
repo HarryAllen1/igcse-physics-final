@@ -7,7 +7,9 @@ import Graph3d from './Graph3d.vue'
 
 [[toc]]
 
-## Background Research
+## Background Information
+
+This project investigates the correlation between a galaxy's magnitude at varying wavelengths, and the redshift. A galaxy's magnitude is a measure of its brightness. However, a galaxy can emit more green light than, for example, red light. So, this means, since colour is determined by the frequency/wavelength of light waves (they are inversely proportional since the speed of light is constant at $3*10^8 m/s$ and $v=f\lambda$)
 
 ## Procedure
 
