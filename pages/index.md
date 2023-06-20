@@ -16,7 +16,7 @@ I got the data from SDSS' data release 18. To get their data, I had to use their
 
 <<< ../query.sql
 
-This query gets the top 5000 rows of data, but only gets the psfMag_u, psfMag_g, psfMag_r, psfMag_i, psfMag_z, and z columns.
+This query gets the top 5000 rows of data, but only gets the `psfMag_u`, `psfMag_g`, `psfMag_r`, `psfMag_i`, `psfMag_z`, and `z` columns. The columns starting with `psfMag` represent the magnitudes of different wavelengths of light, with `psfMag_u` representing ultraviolet light, `psfMag_g` representing green light, `psfMag_r` representing red light, `psfMag_i` representing near-infrared light (very intuitive)
 
 ## Data
 

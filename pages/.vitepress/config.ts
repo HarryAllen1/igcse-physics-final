@@ -100,13 +100,6 @@ export default defineConfig({
 		['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
 		['link', { rel: 'apple-touch-icon', href: '/logo.png' }],
 		[
-			'link',
-			{
-				rel: 'stylesheet',
-				href: 'https://unpkg.com/katex@0.16.7/dist/katex.min.css',
-			},
-		],
-		[
 			'script',
 			{ type: 'module' },
 			`if (location.hostname === "igcse-physics-final.vercel.app")
