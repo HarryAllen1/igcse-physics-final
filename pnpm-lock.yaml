@@ -13,9 +13,6 @@ dependencies:
     version: 1.0.1
 
 devDependencies:
-  '@types/plotly.js':
-    specifier: ^2.12.18
-    version: 2.12.18
   markdown-it-mathjax3:
     specifier: ^4.3.2
     version: 4.3.2
@@ -448,10 +445,6 @@ packages:
       interval-tree-1d: 1.0.4
       isoformat: 0.2.1
     dev: false
-
-  /@types/plotly.js@2.12.18:
-    resolution: {integrity: sha512-ff+CIEWnqZNjZqHtQZvkEAVuLs9fkm1f54QnPVmgoET7wMHdSqUka2hasVN4e5yfHD05YwGjsAtCseewJh/BMw==}
-    dev: true
 
   /@types/web-bluetooth@0.0.17:
     resolution: {integrity: sha512-4p9vcSmxAayx72yn70joFoL44c9MO/0+iVEBIQXe3v2h2SiAsEIo/G5v6ObFWvNKRFjbrVadNf9LqEEZeQPzdA==}
