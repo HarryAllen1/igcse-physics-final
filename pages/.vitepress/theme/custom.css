@@ -12,3 +12,7 @@
 :root {
 	scroll-behavior: smooth;
 }
+
+mjx-container {
+	display: inline-block;
+}
