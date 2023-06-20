@@ -137,10 +137,6 @@ export default defineConfig({
 				text: 'Individual Graphs',
 				link: '/graphs',
 			},
-			{
-				text: '500k Graph',
-				link: '/laggy-graph',
-			}
 		],
 		logo: '/logo.png',
 		search: {
