@@ -128,6 +128,16 @@ export default defineConfig({
 		},
 	},
 	themeConfig: {
+		nav: [
+			{
+				text: 'Paper',
+				link: '/',
+			},
+			{
+				text: 'Individual Graphs',
+				link: '/graphs',
+			},
+		],
 		logo: '/logo.png',
 		search: {
 			provider: 'local',
