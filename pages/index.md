@@ -16,9 +16,13 @@ I got the data from SDSS' data release 18. To get their data, I had to use their
 
 <<< ../query.sql
 
-This query gets the top 5000 rows of data, but only gets the `psfMag_u`, `psfMag_g`, `psfMag_r`, `psfMag_i`, `psfMag_z`, and `z` columns. The columns starting with `psfMag` represent the magnitudes of different wavelengths of light, with `psfMag_u` representing ultraviolet light, `psfMag_g` representing green light, `psfMag_r` representing red light, `psfMag_i` representing near-infrared light (very intuitive)
+This query gets the top 5000 rows of data, but only gets the `psfMag_u`, `psfMag_g`, `psfMag_r`, `psfMag_i`, `psfMag_z`, and `z` columns. The columns starting with `psfMag` represent the magnitudes of different wavelengths of light, with `psfMag_u` representing ultraviolet light, `psfMag_g` representing green light, `psfMag_r` representing red light, `psfMag_i` representing near-infrared light (very intuitive), and `psfMag_z` representing infrared light. The `psf` stands for "Point Spread Function," and represents the amount of spread/blur appears on a light sensor from a single point.
 
 ## Data
+
+Ideally, this would be a 3d graph but it looked really ugly and didn't work well when put onto this page.
+
+You can see the individual, unlayered graphs on [this page](./graphs.md).
 
 <Graph />
 
