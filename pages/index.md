@@ -1,5 +1,6 @@
 <script setup>
-import Graph from './Graph.vue'  
+import Graph from './Graph.vue';
+import Graph3d from './Graph3d.vue'
 </script>
 
 # What is the correlation between galaxy magnitudes and their redshifts?
@@ -17,6 +18,7 @@ I got the data from SDSS' data release 18. To get their data, I had to use their
 ## Data
 
 <Graph />
+<Graph3d />
 
 ## Analysis
 

@@ -15,6 +15,13 @@ export default defineConfig({
         await import('/_vercel/insights/script.js')`,
 		],
 		['script', {}, 'document.documentElement.classList.add("dark")'],
+		[
+			'script',
+			{
+				src: 'https://cdn.plot.ly/plotly-latest.min.js',
+			},
+			'',
+		],
 	],
 	cleanUrls: true,
 	themeConfig: {

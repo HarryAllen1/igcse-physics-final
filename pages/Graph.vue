@@ -5,11 +5,6 @@ import { actualData, mapMagToColour } from './data';
 
 const graph = ref<HTMLDivElement | null>(null);
 
-console.log(`Magnitude,Redshift,MagnitudeLetter
-${actualData
-	.map((d) => `${d.Magnitude},${d.Redshift},${d.MagnitudeLetter}`)
-	.join('\n')}`);
-
 onMounted(async () => {
 	const actualPlot = plot({
 		grid: true,
