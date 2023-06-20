@@ -1,5 +1,6 @@
 import data from './data.json';
-type MagnitudeLetter = 'u' | 'g' | 'r' | 'i' | 'z';
+
+export type MagnitudeLetter = 'u' | 'g' | 'r' | 'i' | 'z';
 
 export const actualData: {
 	Magnitude: number;
