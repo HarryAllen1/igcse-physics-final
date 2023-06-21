@@ -127,6 +127,11 @@ export default defineConfig({
 			},
 		},
 	},
+	vite: {
+		build: {
+			target: 'es2022',
+		},
+	},
 	themeConfig: {
 		nav: [
 			{
@@ -142,8 +147,8 @@ export default defineConfig({
 				link: '/graph-50k',
 			},
 			{
-				text: '500k Graph (super slow; takes ~100s to load)',
-				link: '/graph-500k',
+				text: '100k Graph (super slow; takes ~50s to load)',
+				link: '/graph-100k',
 			},
 		],
 		logo: '/logo.png',
