@@ -141,6 +141,10 @@ export default defineConfig({
 				text: '50k Graph',
 				link: '/graph-50k',
 			},
+			{
+				text: '500k Graph (super slow; takes ~100s to load)',
+				link: '/graph-500k',
+			},
 		],
 		logo: '/logo.png',
 		search: {
