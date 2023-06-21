@@ -43,6 +43,8 @@ As the magnitude passes around 20, the redshifts become more and more random (th
 
 Mostly in the near-infrared wavelength, there are some outliers, namely the ones with a redshift of ~22.8 (although there is a smaller group with a redshift of ~9 at lower magnitudes). This likely represents a galaxy cluster, since gravity would hold the galaxies together, making them move at the same speed, but their magnitudes could still vary.
 
-In the infrared wavelength, as the magnitude passes ~21, there are a greater number of galaxies that don't seem to follow a linear relationship (this is much more visible in the [50k graph](./graph-50k.md)). Again, this can likely be attributed to an accuracy error as most galaxies still
+In the infrared wavelength, as the magnitude passes ~21, there are a greater number of galaxies that don't seem to follow a linear relationship (this is much more visible in the [50k graph](./graph-50k.md)). Again, this can likely be attributed to an accuracy error as most galaxies still follow a linear relationship.
 
 ## Conclusion
+
+Overall, this data shows that a galaxies speed/redshift can be determined by looking at the magnitude of its infrared light emissions. It also demonstrates that this relationship becomes less accurate as wavelength increases.
