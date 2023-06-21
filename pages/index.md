@@ -1,3 +1,9 @@
+---
+next:
+  text: Individual Graphs
+  link: ./graphs.md
+---
+
 <script setup>
 import Graph from './Graph.vue';
 </script>
@@ -14,19 +20,20 @@ I got the data from SDSS' data release 18. To get their data, I had to use their
 
 <<< ../query.sql
 
-This query gets the top 5000 rows of data (a graph with 50k rows is [here](./graph-50k.md), although it is very laggy), but only gets the `psfMag_u`, `psfMag_g`, `psfMag_r`, `psfMag_i`, `psfMag_z`, and `z` columns. The columns starting with `psfMag` represent the magnitudes of different wavelengths of light, with `psfMag_u` representing ultraviolet light, `psfMag_g` representing green light, `psfMag_r` representing red light, `psfMag_i` representing near-infrared light (very intuitive), and `psfMag_z` representing infrared light. The `psf` stands for "Point Spread Function," and represents the amount of spread/blur appears on a light sensor from a single point.
+This query gets the top 5000 rows of data, but only gets the `psfMag_u`, `psfMag_g`, `psfMag_r`, `psfMag_i`, `psfMag_z`, and `z` columns. The columns starting with `psfMag` represent the magnitudes of different wavelengths of light, with `psfMag_u` representing ultraviolet light, `psfMag_g` representing green light, `psfMag_r` representing red light, `psfMag_i` representing near-infrared light (very intuitive), and `psfMag_z` representing infrared light. The `psf` stands for "Point Spread Function," and represents the amount of spread/blur appears on a light sensor from a single point.
 
 ## Data
 
 Ideally, this would be a 3d graph but it looked really ugly and didn't work well when put onto this page.
 
-You can see the individual, unlayered graphs on [this page](./graphs.md).
+You can see the individual, unlayered graphs on [this page](./graphs.md) or a graph with 50k rows [here](./graph-50k.md) (it takes about 10 seconds to load).
 
 <Graph />
 
 ## Analysis
 
-The graph shows that as magnitude increases (or as the galaxy gets darker), the greater the redshift becomes (meaning that the galaxy is moving away from Earth, faster).
+The graph shows that as magnitude increases (or as the galaxy gets darker), the greater the redshift becomes (meaning that the galaxy is moving away from Earth, faster). Since a higher magnitude indicates a lower brightness, this makes sense as farther-away galaxies are more likely to be be moving faster due to Hubble's law, which states that galaxies move faster the farther away they are to Earth. This faster speed increases the light wavelength through the Doppler effect causing the galaxies redshift to increase, creating the (mostly) linear relationship shown in the graph.
+
 This graph shows that as the wavelength increases, the more linear the relationship gets, as shown by the points in deep red (representing the infrared magnitudes). It also shows that, as the magnitude increases, the less linear the magnitude-redshift relationship gets. Furthermore, since the other wavelengths still show some form of trend, as
 
 ## Conclusion

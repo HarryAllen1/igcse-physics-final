@@ -1,3 +1,12 @@
+---
+prev:
+  text: Paper
+  link: ./index.md
+next:
+  text: Super Detailed Graph
+  link: ./graph-50k.md
+---
+
 <script setup>
   import Graph from './IndividualGraph.vue';
 </script>
