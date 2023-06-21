@@ -8,6 +8,6 @@ prev:
   import Graph50k from './Graph100k.vue'
 </script>
 
-# Graph with 50k Rows
+# Graph with 100k Rows
 
 <Graph50k />
