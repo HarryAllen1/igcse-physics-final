@@ -47,4 +47,4 @@ In the infrared wavelength, as the magnitude passes ~21, there are a greater num
 
 ## Conclusion
 
-Overall, this data shows that a galaxies speed/redshift can be determined by looking at the magnitude of its infrared light emissions. It also demonstrates that this relationship becomes less accurate as wavelength increases.
+Overall, this data shows that a galaxies speed/redshift can be determined by looking at the magnitude of its infrared light emissions. It also demonstrates that this relationship becomes less accurate as wavelength increases. It also shows that if you want to find the redshift of a galaxy given its magnitude, you should use the infrared wavelength (or higher), since higher wavelengths produce a more linear relationship.
