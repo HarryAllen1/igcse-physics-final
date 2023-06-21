@@ -26,9 +26,12 @@ This query gets the top 5000 rows of data, but only gets the `psfMag_u`, `psfMag
 
 Ideally, this would be a 3d graph but it looked really ugly and didn't work well when put onto this page.
 
-You can see the individual, unlayered graphs on [this page](./graphs.md) or a graph with 50k rows [here](./graph-50k.md) (it takes about 10 seconds to load).
+You can see the individual, unlayered graphs on [this page](./graphs.md) or a graph with 50k rows [here](./graph-50k.md) (it takes about 10 seconds to load and often crashes Chrome).
 
 <Graph />
+
+The x-axis represents the magnitude using the "AB magnitude system" which is a [logarithmic scale representing the spectral flux density](https://en.wikipedia.org/wiki/AB_magnitude). It is unitless.
+The y-axis represents the redshift. Since redshift is relative, it is also unitless.
 
 ## Analysis
 
