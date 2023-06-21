@@ -3,3 +3,5 @@ dist
 .temp
 cache
 pnpm-lock.yaml
+data.json
+data-*.json
