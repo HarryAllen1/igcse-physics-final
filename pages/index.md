@@ -37,7 +37,7 @@ The y-axis represents the redshift. Since redshift is relative, it is also unitl
 
 The graph shows that as magnitude increases (or as the galaxy gets darker), the greater the redshift becomes (meaning that the galaxy is moving away from Earth, faster). Since a higher magnitude indicates a lower brightness, this makes sense as farther-away galaxies are more likely to be be moving faster due to Hubble's law, which states that galaxies move faster the farther away they are to Earth. This faster speed increases the light wavelength through the Doppler effect causing the galaxies redshift to increase, creating the (mostly) linear relationship shown in the graph.
 
-This graph shows that as the wavelength increases, the more linear the relationship gets, as shown by the points in deep red (representing the infrared magnitudes). It also shows that, as the magnitude increases, the less linear the magnitude-redshift relationship gets.
+This graph shows that as the wavelength increases, the more linear the relationship gets, as shown by the points in deep red (representing the infrared magnitudes) below a magnitude 20 being in an almost perfectly straight line. It also shows that, as the magnitude increases, the less linear the magnitude-redshift relationship gets.
 
 As the magnitude passes around 20, the redshifts become more and more random (this is more visible in the [50k graph](./graph-50k.md)). This is most likely due to accuracy issues with the lack of brightness of the galaxies making it hard to create precise measurements.
 
