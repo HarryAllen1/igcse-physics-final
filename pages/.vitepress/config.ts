@@ -17,7 +17,6 @@ export default defineConfig({
 			`if (location.hostname === "igcse-physics-final.vercel.app")
         await import('/_vercel/insights/script.js')`,
 		],
-		['script', {}, 'document.documentElement.classList.add("dark")'],
 		[
 			'script',
 			{
@@ -63,5 +62,5 @@ export default defineConfig({
 			},
 		],
 	},
-	appearance: false,
+	appearance: 'force-dark',
 });
