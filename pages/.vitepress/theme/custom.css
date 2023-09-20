@@ -5,14 +5,14 @@
 	--vp-c-brand-lighter: #d893ff;
 	--vp-c-brand-light: #be7bff;
 	--vp-c-brand: var(--vp-c-purple);
+	--vp-c-brand-1: var(--vp-c-brand);
 	--vp-c-brand-dark: #8a4cd8;
+	--vp-c-brand-2: var(--vp-c-brand-dark);
 	--vp-c-brand-darker: #7135be;
+	--vp-c-brand-3: var(--vp-c-brand-darker);
+	--vp-code-color: var(--vp-c-text-2);
 }
 
 :root {
 	scroll-behavior: smooth;
-}
-
-mjx-container {
-	display: inline-block;
 }
